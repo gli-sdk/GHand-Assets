@@ -1,0 +1,119 @@
+<mujoco model="ghand5-left">
+  <compiler angle="radian"/>
+
+  <asset>
+    <mesh name="base_link" content_type="model/stl" file="../meshes/hands/visual/left/base_link.STL"/>
+    <mesh name="LF_MCP_link" content_type="model/stl" file="../meshes/hands/visual/left/LF_MCP_link.STL"/>
+    <mesh name="LF_PIP_link" content_type="model/stl" file="../meshes/hands/visual/left/LF_PIP_link.STL"/>
+    <mesh name="LF_DIP_link" content_type="model/stl" file="../meshes/hands/visual/left/LF_DIP_link.STL"/>
+    <mesh name="RF_MCP_link" content_type="model/stl" file="../meshes/hands/visual/left/RF_MCP_link.STL"/>
+    <mesh name="RF_PIP_link" content_type="model/stl" file="../meshes/hands/visual/left/RF_PIP_link.STL"/>
+    <mesh name="RF_DIP_link" content_type="model/stl" file="../meshes/hands/visual/left/RF_DIP_link.STL"/>
+    <mesh name="MF_MCP_link" content_type="model/stl" file="../meshes/hands/visual/left/MF_MCP_link.STL"/>
+    <mesh name="MF_PIP_link" content_type="model/stl" file="../meshes/hands/visual/left/MF_PIP_link.STL"/>
+    <mesh name="MF_DIP_link" content_type="model/stl" file="../meshes/hands/visual/left/MF_DIP_link.STL"/>
+    <mesh name="FF_MCP_AA_link" content_type="model/stl" file="../meshes/hands/visual/left/FF_MCP_AA_link.STL"/>
+    <mesh name="FF_MCP_link" content_type="model/stl" file="../meshes/hands/visual/left/FF_MCP_link.STL"/>
+    <mesh name="FF_PIP_link" content_type="model/stl" file="../meshes/hands/visual/left/FF_PIP_link.STL"/>
+    <mesh name="FF_DIP_link" content_type="model/stl" file="../meshes/hands/visual/left/FF_DIP_link.STL"/>
+    <mesh name="Thumb_TMC_PS_link" content_type="model/stl" file="../meshes/hands/visual/left/Thumb_TMC_PS_link.STL"/>
+    <mesh name="Thumb_TMC_AA_link" content_type="model/stl" file="../meshes/hands/visual/left/Thumb_TMC_AA_link.STL"/>
+    <mesh name="Thumb_TMC_FE_link" content_type="model/stl" file="../meshes/hands/visual/left/Thumb_TMC_FE_link.STL"/>
+    <mesh name="Thumb_MCP_link" content_type="model/stl" file="../meshes/hands/visual/left/Thumb_MCP_link.STL"/>
+    <mesh name="Thumb_IP_link" content_type="model/stl" file="../meshes/hands/visual/left/Thumb_IP_link.STL"/>
+  </asset>
+
+  <worldbody>
+    <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="base_link"/>
+    <body name="LF_MCP_link" pos="0.0341852 0.0010527 0.0926708" quat="0.682158 0 0.731205 0">
+      <inertial pos="-0.0148712 0.0050321 -3.90397e-05" quat="0.509362 0.506467 0.492119 0.491794" mass="0.0264425" diaginertia="3.74741e-06 3.38698e-06 1.12396e-06"/>
+      <joint name="LF_MCP" pos="0 0 0" axis="0 0 1" range="0 1.5708"/>
+      <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="LF_MCP_link"/>
+      <body name="LF_PIP_link" pos="-0.0358289 0.00696708 0">
+        <inertial pos="-0.00970679 -0.00148918 -3.2488e-05" quat="0.466563 0.476451 0.530225 0.523617" mass="0.0106102" diaginertia="7.08909e-07 4.6819e-07 3.86091e-07"/>
+        <joint name="LF_PIP" pos="0 0 0" axis="0 0 1" range="0 1.65806"/>
+        <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="LF_PIP_link"/>
+        <body name="LF_DIP_link" pos="-0.0179228 -0.00526165 0">
+          <inertial pos="-0.0108227 0.00329547 -3.01592e-07" quat="0.548701 0.54876 0.445802 0.446149" mass="0.017857" diaginertia="6.93961e-07 5.82557e-07 3.26787e-07"/>
+          <joint name="LF_DIP" pos="0 0 0" axis="0 0 1" range="0 1.5708"/>
+          <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="LF_DIP_link"/>
+        </body>
+      </body>
+    </body>
+    <body name="RF_MCP_link" pos="0.0135356 0.0010527 0.0963961" quat="0.694099 0 0.71988 0">
+      <inertial pos="-0.0200177 0.00499797 -1.85031e-05" quat="0.508883 0.5077 0.491182 0.491954" mass="0.0343135" diaginertia="5.96065e-06 5.50745e-06 1.44164e-06"/>
+      <joint name="RF_MCP" pos="0 0 0" axis="0 0 1" range="0 1.5708"/>
+      <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="RF_MCP_link"/>
+      <body name="RF_PIP_link" pos="-0.0444122 0.00702323 0">
+        <inertial pos="-0.0129148 -0.00162997 -2.88218e-05" quat="0.470927 0.477156 0.526237 0.523091" mass="0.0144399" diaginertia="1.1668e-06 9.20913e-07 4.71875e-07"/>
+        <joint name="RF_PIP" pos="0 0 0" axis="0 0 1" range="0 1.74533"/>
+        <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="RF_PIP_link"/>
+        <body name="RF_DIP_link" pos="-0.0229863 -0.005064 0">
+          <inertial pos="-0.0109605 0.00395378 -1.63905e-07" quat="0.556135 0.556161 0.436518 0.436865" mass="0.0185889" diaginertia="7.50878e-07 6.40953e-07 3.42201e-07"/>
+          <joint name="RF_DIP" pos="0 0 0" axis="0 0 1" range="0 1.5708"/>
+          <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="RF_DIP_link"/>
+        </body>
+      </body>
+    </body>
+    <body name="MF_MCP_link" pos="-0.00722798 0.0010527 0.0991316" quat="0.707107 0 0.707107 0">
+      <inertial pos="-0.0200176 0.00499799 -1.85265e-05" quat="0.50888 0.507702 0.491181 0.491956" mass="0.0343136" diaginertia="5.96067e-06 5.50746e-06 1.44165e-06"/>
+      <joint name="MF_MCP" pos="0 0 0" axis="0 0 1" range="0 1.5708"/>
+      <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="MF_MCP_link"/>
+      <body name="MF_PIP_link" pos="-0.0444122 0.00702323 0">
+        <inertial pos="-0.0129148 -0.00162996 -2.88204e-05" quat="0.470927 0.477156 0.526237 0.523091" mass="0.0144399" diaginertia="1.1668e-06 9.20912e-07 4.71875e-07"/>
+        <joint name="MF_PIP" pos="0 0 0" axis="0 0 1" range="0 1.74533"/>
+        <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="MF_PIP_link"/>
+        <body name="MF_DIP_link" pos="-0.0229863 -0.005064 0">
+          <inertial pos="-0.0109605 0.00395378 -1.46218e-07" quat="0.556134 0.556162 0.436521 0.436862" mass="0.0185888" diaginertia="7.50875e-07 6.40954e-07 3.422e-07"/>
+          <joint name="MF_DIP" pos="0 0 0" axis="0 0 1" range="0 1.5708"/>
+          <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="MF_DIP_link"/>
+        </body>
+      </body>
+    </body>
+    <body name="FF_MCP_AA_link" pos="-0.028566 0.0135527 0.0959274" quat="0.707107 0.707107 0 0">
+      <inertial pos="1.64802e-07 -0.000374611 0.00649307" quat="0.705964 -0.0401762 0.0396197 0.705996" mass="0.00258838" diaginertia="6.01333e-08 3.8464e-08 3.62435e-08"/>
+      <joint name="FF_MCP_AA" pos="0 0 0" axis="0 0 1" range="-0.174533 0.174533"/>
+      <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="FF_MCP_AA_link"/>
+      <body name="FF_MCP_link" pos="0 0 0.0125" quat="0.5 -0.5 0.5 -0.5">
+        <inertial pos="-0.0203262 0.00517157 -1.51339e-05" quat="0.515512 0.514633 0.483774 0.485142" mass="0.0388434" diaginertia="6.3579e-06 5.9166e-06 1.69325e-06"/>
+        <joint name="FF_MCP" pos="0 0 0" axis="0 0 1" range="0 1.5708"/>
+        <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="FF_MCP_link"/>
+        <body name="FF_PIP_link" pos="-0.0444028 0.00707732 0">
+          <inertial pos="-0.0129211 -0.00157947 -2.88222e-05" quat="0.471948 0.478184 0.525304 0.52217" mass="0.0144399" diaginertia="1.1668e-06 9.20912e-07 4.71875e-07"/>
+          <joint name="FF_PIP" pos="0 0 0" axis="0 0 1" range="0 1.74533"/>
+          <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="FF_PIP_link"/>
+          <body name="FF_DIP_link" pos="-0.0230059 -0.00497412 0">
+            <inertial pos="-0.0109378 0.00401605 -1.52907e-07" quat="0.557374 0.5574 0.434938 0.435279" mass="0.0185888" diaginertia="7.50877e-07 6.40955e-07 3.422e-07"/>
+            <joint name="FF_DIP" pos="0 0 0" axis="0 0 1" range="0 1.5708"/>
+            <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="FF_DIP_link"/>
+          </body>
+        </body>
+      </body>
+    </body>
+    <body name="Thumb_TMC_PS_link" pos="-0.0134918 -0.0165473 0.0372" quat="0 0 0.707107 -0.707107">
+      <inertial pos="-0.00286579 8.1672e-05 0.00727706" quat="0.492129 0.482511 -0.527346 0.496889" mass="0.0504417" diaginertia="1.35066e-05 1.02736e-05 5.31856e-06"/>
+      <joint name="Thumb_TMC_PS" pos="0 0 0" axis="0 0 -1" range="-0.174533 1.0472"/>
+      <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="Thumb_TMC_PS_link"/>
+      <body name="Thumb_TMC_AA_link" pos="0.00380944 0.00759935 0.0089" quat="0.499801 0.499801 -0.500199 0.500199">
+        <inertial pos="-0.000429258 -0.00819858 -0.00188897" quat="0.598982 0.373852 -0.551692 0.443949" mass="0.00783292" diaginertia="3.74176e-07 2.24559e-07 1.85535e-07"/>
+        <joint name="Thumb_TMC_AA" pos="0 0 0" axis="0 0 1" range="0.349066 1.5708"/>
+        <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="Thumb_TMC_AA_link"/>
+        <body name="Thumb_TMC_FE_link" pos="0 -0.0169708 -0.000135303" quat="0.707107 0 -0.707107 0">
+          <inertial pos="0.00545676 -0.0189127 -4.16795e-05" quat="0.682256 0.691382 0.168454 0.167751" mass="0.0655984" diaginertia="1.71078e-05 1.33121e-05 6.3665e-06"/>
+          <joint name="Thumb_TMC_FE" pos="0 0 0" axis="0 0 1" range="0 0.872665"/>
+          <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="Thumb_TMC_FE_link"/>
+          <body name="Thumb_MCP_link" pos="0.0124047 -0.0401654 0">
+            <inertial pos="0.0102724 -0.0164716 -1.54047e-05" quat="0.665581 0.663954 0.241171 0.240838" mass="0.0211695" diaginertia="3.07452e-06 2.72197e-06 1.24607e-06"/>
+            <joint name="Thumb_MCP" pos="0 0 0" axis="0 0 1" range="0 1.15192"/>
+            <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="Thumb_MCP_link"/>
+            <body name="Thumb_IP_link" pos="0.0199996 -0.0292092 0">
+              <inertial pos="0.00298081 -0.0105432 4.29903e-05" quat="0.705063 0.702132 0.0686576 0.0719901" mass="0.0339879" diaginertia="1.96059e-06 1.61464e-06 9.5448e-07"/>
+              <joint name="Thumb_IP" pos="0 0 0" axis="0 0 1" range="0 1.5708"/>
+              <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="Thumb_IP_link"/>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+</mujoco>

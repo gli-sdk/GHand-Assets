@@ -1,0 +1,1091 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="ghand5-left">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.000508043541263129 0.00163837087514337 0.0512794338003214"
+        rpy="0 0 0" />
+      <mass
+        value="0.422453437313533" />
+      <inertia
+        ixx="0.000263643083859042"
+        ixy="-4.46717237495948E-07"
+        ixz="8.47783394891609E-07"
+        iyy="0.000490582390344789"
+        iyz="-5.35443452755706E-06"
+        izz="0.000266660772432516" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand5_system/meshes/hands/visual/left/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand5_system/meshes/hands/visual/left/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="LF_MCP_link">
+    <inertial>
+      <origin
+        xyz="-0.0148711772185361 0.00503210080095334 -3.90397370621486E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0264425466158207" />
+      <inertia
+        ixx="1.12664170958369E-06"
+        ixy="8.3668410193173E-08"
+        ixz="-5.96414613524631E-09"
+        iyy="3.74474011460812E-06"
+        iyz="-9.55704696418288E-10"
+        izz="3.38696740766995E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand5_system/meshes/hands/visual/left/LF_MCP_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand5_system/meshes/hands/visual/left/LF_MCP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LF_MCP"
+    type="revolute">
+    <origin
+      xyz="0.0341852210660914 0.00105270446463312 0.0926707802401366"
+      rpy="3.14159265358965 1.50142049658136 3.14159265358979" />
+    <parent
+      link="base_link" />
+    <child
+      link="LF_MCP_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.5707963267949"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="LF_PIP_link">
+    <inertial>
+      <origin
+        xyz="-0.00970679039691405 -0.0014891837266436 -3.24879588827764E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0106101968315524" />
+      <inertia
+        ixx="3.90064215119568E-07"
+        ixy="-3.5496221282279E-08"
+        ixz="1.21739232551032E-09"
+        iyy="7.0495323844342E-07"
+        iyz="1.15020346762716E-09"
+        izz="4.68172630853214E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand5_system/meshes/hands/visual/left/LF_PIP_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand5_system/meshes/hands/visual/left/LF_PIP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LF_PIP"
+    type="revolute">
+    <origin
+      xyz="-0.0358288970800678 0.006967083967316 0"
+      rpy="0 0 0" />
+    <parent
+      link="LF_MCP_link" />
+    <child
+      link="LF_PIP_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.65806278939461"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="LF_DIP_link">
+    <inertial>
+      <origin
+        xyz="-0.0108226899547076 0.00329547162175338 -3.0159199589791E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.0178569970402571" />
+      <inertia
+        ixx="3.42130350461428E-07"
+        ixy="7.34734168824433E-08"
+        ixz="-5.13255374686806E-11"
+        iyy="6.78616961664815E-07"
+        iyz="6.00563708330342E-11"
+        izz="5.82556664767968E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand5_system/meshes/hands/visual/left/LF_DIP_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand5_system/meshes/hands/visual/left/LF_DIP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LF_DIP"
+    type="revolute">
+    <origin
+      xyz="-0.0179228018003556 -0.00526164609730276 0"
+      rpy="0 0 0" />
+    <parent
+      link="LF_PIP_link" />
+    <child
+      link="LF_DIP_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.5707963267949"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="RF_MCP_link">
+    <inertial>
+      <origin
+        xyz="-0.0200176605094789 0.00499796509523004 -1.85030901490336E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0343134760305779" />
+      <inertia
+        ixx="1.44671354097826E-06"
+        ixy="1.51036946430779E-07"
+        ixz="-7.98116565849752E-09"
+        iyy="5.95559433593644E-06"
+        iyz="9.53300016351156E-11"
+        izz="5.50743031595373E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand5_system/meshes/hands/visual/left/RF_MCP_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand5_system/meshes/hands/visual/left/RF_MCP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RF_MCP"
+    type="revolute">
+    <origin
+      xyz="0.0135355512286308 0.00105270446463024 0.0963960798331156"
+      rpy="3.14159265358965 1.53433449827025 3.14159265358979" />
+    <parent
+      link="base_link" />
+    <child
+      link="RF_MCP_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.5707963267949"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="RF_PIP_link">
+    <inertial>
+      <origin
+        xyz="-0.0129148260618749 -0.00162996682647051 -2.88218112195031E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0144399124372973" />
+      <inertia
+        ixx="4.79018492399723E-07"
+        ixy="-6.99071661560918E-08"
+        ixz="4.02480944589539E-09"
+        iyy="1.15968816988007E-06"
+        iyz="1.28751406728751E-09"
+        izz="9.20877804802019E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand5_system/meshes/hands/visual/left/RF_PIP_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand5_system/meshes/hands/visual/left/RF_PIP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RF_PIP"
+    type="revolute">
+    <origin
+      xyz="-0.0444122103156598 0.00702322514126899 0"
+      rpy="0 0 0" />
+    <parent
+      link="RF_MCP_link" />
+    <child
+      link="RF_PIP_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.74532925199433"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="RF_DIP_link">
+    <inertial>
+      <origin
+        xyz="-0.0109604550651497 0.00395377644286432 -1.63905277614229E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.0185888776633967" />
+      <inertia
+        ixx="3.65194865942127E-07"
+        ixy="9.41726786159421E-08"
+        ixz="-6.90313250303585E-11"
+        iyy="7.27883339734115E-07"
+        iyz="6.30489668305463E-11"
+        izz="6.40952646597465E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand5_system/meshes/hands/visual/left/RF_DIP_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand5_system/meshes/hands/visual/left/RF_DIP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RF_DIP"
+    type="revolute">
+    <origin
+      xyz="-0.0229863014808497 -0.00506400073075268 0"
+      rpy="0 0 0" />
+    <parent
+      link="RF_PIP_link" />
+    <child
+      link="RF_DIP_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.5707963267949"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="MF_MCP_link">
+    <inertial>
+      <origin
+        xyz="-0.0200176276093762 0.0049979899643572 -1.85265135896765E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0343135939214946" />
+      <inertia
+        ixx="1.44671866504892E-06"
+        ixy="1.51030976930524E-07"
+        ixz="-7.96680882854393E-09"
+        iyy="5.95561227994289E-06"
+        iyz="9.88698527979206E-11"
+        izz="5.50744598683865E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand5_system/meshes/hands/visual/left/MF_MCP_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand5_system/meshes/hands/visual/left/MF_MCP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="MF_MCP"
+    type="revolute">
+    <origin
+      xyz="-0.00722798025578278 0.00105270446462735 0.0991316467107428"
+      rpy="0 1.5707963267949 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="MF_MCP_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.5707963267949"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="MF_PIP_link">
+    <inertial>
+      <origin
+        xyz="-0.0129148215464311 -0.00162996448948438 -2.88203621944295E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0144399273945641" />
+      <inertia
+        ixx="4.79018455766445E-07"
+        ixy="-6.99071306144156E-08"
+        ixz="4.02454489268725E-09"
+        iyy="1.15968800074267E-06"
+        iyz="1.28737569228887E-09"
+        izz="9.20877447557288E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand5_system/meshes/hands/visual/left/MF_PIP_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand5_system/meshes/hands/visual/left/MF_PIP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="MF_PIP"
+    type="revolute">
+    <origin
+      xyz="-0.0444122103156598 0.00702322514126876 0"
+      rpy="0 0 0" />
+    <parent
+      link="MF_MCP_link" />
+    <child
+      link="MF_PIP_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.74532925199433"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="MF_DIP_link">
+    <inertial>
+      <origin
+        xyz="-0.0109604654149592 0.00395377978875927 -1.46217913525246E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.0185887777045742" />
+      <inertia
+        ixx="3.65193959221198E-07"
+        ixy="9.41717850009525E-08"
+        ixz="-6.68376942475982E-11"
+        iyy="7.27881263897243E-07"
+        iyz="6.20174712245421E-11"
+        izz="6.40953734705396E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand5_system/meshes/hands/visual/left/MF_DIP_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand5_system/meshes/hands/visual/left/MF_DIP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="MF_DIP"
+    type="revolute">
+    <origin
+      xyz="-0.0229863014808496 -0.00506400073075275 0"
+      rpy="0 0 0" />
+    <parent
+      link="MF_PIP_link" />
+    <child
+      link="MF_DIP_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.5707963267949"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="FF_MCP_AA_link">
+    <inertial>
+      <origin
+        xyz="1.64802341051651E-07 -0.000374610587386776 0.00649307156393637"
+        rpy="0 0 0" />
+      <mass
+        value="0.0025883837088615" />
+      <inertia
+        ixx="3.84640393651395E-08"
+        ixy="8.44421729060446E-13"
+        ixz="1.66600403526389E-12"
+        iyy="5.98300763631494E-08"
+        iyz="-2.67449885036101E-09"
+        izz="3.65467558498812E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand5_system/meshes/hands/visual/left/FF_MCP_AA_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand5_system/meshes/hands/visual/left/FF_MCP_AA_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FF_MCP_AA"
+    type="revolute">
+    <origin
+      xyz="-0.0285659529216511 0.0135527163734262 0.095927444876198"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="FF_MCP_AA_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.174532925199433"
+      upper="0.174532925199433"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="FF_MCP_link">
+    <inertial>
+      <origin
+        xyz="-0.0203261719483402 0.00517157125397612 -1.51338923120997E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0388434494003892" />
+      <inertia
+        ixx="1.71073787692032E-06"
+        ixy="2.84942793424467E-07"
+        ixz="-9.39373079633421E-09"
+        iyy="6.34042618565216E-06"
+        iyz="8.22461112693675E-10"
+        izz="5.91657811452182E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand5_system/meshes/hands/visual/left/FF_MCP_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand5_system/meshes/hands/visual/left/FF_MCP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FF_MCP"
+    type="revolute">
+    <origin
+      xyz="0 0 0.0125"
+      rpy="-1.5707963267949 0 -1.5707963267949" />
+    <parent
+      link="FF_MCP_AA_link" />
+    <child
+      link="FF_MCP_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.5707963267949"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="FF_PIP_link">
+    <inertial>
+      <origin
+        xyz="-0.0129211042936213 -0.0015794747331721 -2.88222144197853E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0144399060605386" />
+      <inertia
+        ixx="4.78482170758205E-07"
+        ixy="-6.72448298114008E-08"
+        ixz="4.02985409710335E-09"
+        iyy="1.16022348477376E-06"
+        iyz="1.2717655359955E-09"
+        izz="9.20877322423949E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand5_system/meshes/hands/visual/left/FF_PIP_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand5_system/meshes/hands/visual/left/FF_PIP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FF_PIP"
+    type="revolute">
+    <origin
+      xyz="-0.0444028148756133 0.00707732213426312 0"
+      rpy="0 0 0" />
+    <parent
+      link="FF_MCP_link" />
+    <child
+      link="FF_PIP_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.74532925199433"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="FF_DIP_link">
+    <inertial>
+      <origin
+        xyz="-0.0109378083481901 0.00401605154274098 -1.52906606647185E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.0185888083519497" />
+      <inertia
+        ixx="3.6627730405321E-07"
+        ixy="9.62284397970926E-08"
+        ixz="-6.69044791974734E-11"
+        iyy="7.26799727463325E-07"
+        iyz="6.24757232663035E-11"
+        izz="6.40955211912844E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand5_system/meshes/hands/visual/left/FF_DIP_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand5_system/meshes/hands/visual/left/FF_DIP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FF_DIP"
+    type="revolute">
+    <origin
+      xyz="-0.0230058985654291 -0.00497411578203518 0"
+      rpy="0 0 0" />
+    <parent
+      link="FF_PIP_link" />
+    <child
+      link="FF_DIP_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.5707963267949"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Thumb_TMC_PS_link">
+    <inertial>
+      <origin
+        xyz="-0.00286579189438619 8.16719878157721E-05 0.00727706099128318"
+        rpy="0 0 0" />
+      <mass
+        value="0.0504417355174311" />
+      <inertia
+        ixx="1.02739038545826E-05"
+        ixy="-1.9249655684267E-07"
+        ixz="-1.65642270274189E-07"
+        iyy="5.32993653042683E-06"
+        iyz="-1.72039716912975E-07"
+        izz="1.34948653995552E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand5_system/meshes/hands/visual/left/Thumb_TMC_PS_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand5_system/meshes/hands/visual/left/Thumb_TMC_PS_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Thumb_TMC_PS"
+    type="revolute">
+    <origin
+      xyz="-0.0134918109575169 -0.0165472836265707 0.0372"
+      rpy="-1.5707963267949 0 -3.14159265358965" />
+    <parent
+      link="base_link" />
+    <child
+      link="Thumb_TMC_PS_link" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-0.174532925199433"
+      upper="1.0471975511966"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Thumb_TMC_AA_link">
+    <inertial>
+      <origin
+        xyz="-0.000429258163308389 -0.00819858219889382 -0.0018889705084159"
+        rpy="0 0 0" />
+      <mass
+        value="0.00783292428265176" />
+      <inertia
+        ixx="2.20337014525965E-07"
+        ixy="-1.20901326370108E-08"
+        ixz="1.00206761534214E-09"
+        iyy="1.92376202737048E-07"
+        iyz="2.18153855309249E-08"
+        izz="3.71557089991939E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand5_system/meshes/hands/visual/left/Thumb_TMC_AA_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand5_system/meshes/hands/visual/left/Thumb_TMC_AA_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Thumb_TMC_AA"
+    type="revolute">
+    <origin
+      xyz="0.00380943610202206 0.0075993518562691 0.0089000000000029"
+      rpy="-1.5707963267949 -1.57 3.14159265358979" />
+    <parent
+      link="Thumb_TMC_PS_link" />
+    <child
+      link="Thumb_TMC_AA_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0.349065850398866"
+      upper="1.5707963267949"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Thumb_TMC_FE_link">
+    <inertial>
+      <origin
+        xyz="0.00545675661444068 -0.0189127124132279 -4.16794533686787E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0655983505307365" />
+      <inertia
+        ixx="1.48168784761073E-05"
+        ixy="4.39959324682054E-06"
+        ixz="4.80470308470723E-08"
+        iyy="8.65854342269974E-06"
+        iyz="-7.49853129515159E-08"
+        izz="1.33110336851764E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand5_system/meshes/hands/visual/left/Thumb_TMC_FE_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand5_system/meshes/hands/visual/left/Thumb_TMC_FE_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Thumb_TMC_FE"
+    type="revolute">
+    <origin
+      xyz="0 -0.0169708042062207 -0.000135302815330952"
+      rpy="0 -1.5707963267949 0" />
+    <parent
+      link="Thumb_TMC_AA_link" />
+    <child
+      link="Thumb_TMC_FE_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.872664625997165"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Thumb_MCP_link">
+    <inertial>
+      <origin
+        xyz="0.0102724056633448 -0.0164716138694615 -1.54047012742922E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0211695308316589" />
+      <inertia
+        ixx="2.32359665444926E-06"
+        ixy="8.99517221186984E-07"
+        ixz="-2.2257883511795E-09"
+        iyy="1.99699379572578E-06"
+        iyz="1.99126796290114E-09"
+        izz="2.72196769347229E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand5_system/meshes/hands/visual/left/Thumb_MCP_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand5_system/meshes/hands/visual/left/Thumb_MCP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Thumb_MCP"
+    type="revolute">
+    <origin
+      xyz="0.0124047359661016 -0.040165439442527 0"
+      rpy="0 0 0" />
+    <parent
+      link="Thumb_TMC_FE_link" />
+    <child
+      link="Thumb_MCP_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.15191730631626"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Thumb_IP_link">
+    <inertial>
+      <origin
+        xyz="0.0029808080560078 -0.0105432341704655 4.29903138707936E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0339878828901569" />
+      <inertia
+        ixx="1.92117349576886E-06"
+        ixy="1.95183983717222E-07"
+        ixz="8.50487749027724E-10"
+        iyy="9.93903641320791E-07"
+        iyz="3.26449644527531E-09"
+        izz="1.61463123626968E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand5_system/meshes/hands/visual/left/Thumb_IP_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand5_system/meshes/hands/visual/left/Thumb_IP_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Thumb_IP"
+    type="revolute">
+    <origin
+      xyz="0.0199996280796681 -0.029209157411227 0"
+      rpy="0 0 0" />
+    <parent
+      link="Thumb_MCP_link" />
+    <child
+      link="Thumb_IP_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.5707963267949"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
