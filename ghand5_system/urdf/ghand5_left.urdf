@@ -156,7 +156,7 @@
       xyz="0 0 1" />
     <limit
       lower="0"
-      upper="1.65806278939461"
+      upper="1.2915436464758"
       effort="0"
       velocity="0" />
   </joint>
@@ -330,7 +330,7 @@
       xyz="0 0 1" />
     <limit
       lower="0"
-      upper="1.74532925199433"
+      upper="1.5707963267949"
       effort="0"
       velocity="0" />
   </joint>
@@ -504,7 +504,7 @@
       xyz="0 0 1" />
     <limit
       lower="0"
-      upper="1.74532925199433"
+      upper="1.5707963267949"
       effort="0"
       velocity="0" />
   </joint>
@@ -736,7 +736,7 @@
       xyz="0 0 1" />
     <limit
       lower="0"
-      upper="1.74532925199433"
+      upper="1.39626340159546"
       effort="0"
       velocity="0" />
   </joint>
