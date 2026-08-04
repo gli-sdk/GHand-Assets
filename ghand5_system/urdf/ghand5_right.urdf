@@ -108,6 +108,7 @@
     <child link="LF_DIP_link" />
     <axis xyz="0 0 1" />
     <limit lower="0" upper="1.5707963267949" effort="0" velocity="0" />
+    <mimic joint="LF_PIP" multiplier="0.841152165" offset="-0.03862607626264481" />
   </joint>
   <link name="RF_MCP_link">
     <inertial>
@@ -195,6 +196,7 @@
     <child link="RF_DIP_link" />
     <axis xyz="0 0 1" />
     <limit lower="0" upper="1.5707963267949" effort="0" velocity="0" />
+    <mimic joint="RF_PIP" multiplier="0.821680553" offset="-0.033279428226727026" />
   </joint>
   <link name="MF_MCP_link">
     <inertial>
@@ -282,6 +284,7 @@
     <child link="MF_DIP_link" />
     <axis xyz="0 0 1" />
     <limit lower="0" upper="1.5707963267949" effort="0" velocity="0" />
+    <mimic joint="MF_PIP" multiplier="0.821680553" offset="-0.033279428226727026" />
   </joint>
   <link name="FF_MCP_AA_link">
     <inertial>
@@ -398,6 +401,7 @@
     <child link="FF_DIP_link" />
     <axis xyz="0 0 1" />
     <limit lower="0" upper="1.5707963267949" effort="0" velocity="0" />
+    <mimic joint="FF_PIP" multiplier="0.820453298" offset="-0.032725507235168594" />
   </joint>
   <link name="Thumb_TMC_PS_link">
     <inertial>
@@ -543,5 +547,6 @@
     <child link="Thumb_IP_link" />
     <axis xyz="0 0 1" />
     <limit lower="0" upper="1.5707963267949" effort="0" velocity="0" />
+    <mimic joint="Thumb_MCP" multiplier="1.107174665" offset="0.019096537114922627" />
   </joint>
 </robot>

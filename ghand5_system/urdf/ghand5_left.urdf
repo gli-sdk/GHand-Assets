@@ -217,6 +217,10 @@
       upper="1.5707963267949"
       effort="0"
       velocity="0" />
+    <mimic
+      joint="LF_PIP"
+      multiplier="0.841152165"
+      offset="-0.03862607626264481" />
   </joint>
   <link
     name="RF_MCP_link">
@@ -391,6 +395,10 @@
       upper="1.5707963267949"
       effort="0"
       velocity="0" />
+    <mimic
+      joint="RF_PIP"
+      multiplier="0.821680553"
+      offset="-0.033279428226727026" />
   </joint>
   <link
     name="MF_MCP_link">
@@ -565,6 +573,10 @@
       upper="1.5707963267949"
       effort="0"
       velocity="0" />
+    <mimic
+      joint="MF_PIP"
+      multiplier="0.821680553"
+      offset="-0.033279428226727026" />
   </joint>
   <link
     name="FF_MCP_AA_link">
@@ -797,6 +809,10 @@
       upper="1.5707963267949"
       effort="0"
       velocity="0" />
+    <mimic
+      joint="FF_PIP"
+      multiplier="0.820453298"
+      offset="-0.032725507235168594" />
   </joint>
   <link
     name="Thumb_TMC_PS_link">
@@ -1087,5 +1103,9 @@
       upper="1.5707963267949"
       effort="0"
       velocity="0" />
+    <mimic
+      joint="Thumb_MCP"
+      multiplier="1.107174665"
+      offset="0.019096537114922627" />
   </joint>
 </robot>
