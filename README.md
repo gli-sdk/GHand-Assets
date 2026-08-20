@@ -20,7 +20,4 @@ The release provides URDF, MJCF and USD robot models, along with corresponding m
 
 ## Using the Models
 URDF files can be loaded by common robotics tools such as ROS, RViz, Pinocchio, and other URDF-compatible parsers.
-```
-todo: add instructions
-```
 
