@@ -1,6 +1,6 @@
 # GHand Assets
 
-This repository contains public description assets for GHand dexterous hands. The package supports simulation, visualization, algorithm verification and robotics development.
+This repository contains public description assets for GHand. The package supports simulation, visualization, algorithm verification and robotics development.
 The release provides URDF, MJCF and USD robot models, along with corresponding mesh geometric files.
 
 ## What Is Included
