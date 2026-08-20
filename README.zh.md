@@ -1,5 +1,7 @@
 # GHand Assets
 
+[English](README.md)
+
 本仓库包含 GHand 灵巧手的公开描述资源包。该资源包支持仿真、可视化、算法验证与机器人开发。
 版本发布提供 URDF、MJCF 和 USD 机器人模型，以及对应的几何网格文件。
 
