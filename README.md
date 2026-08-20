@@ -1,14 +1,14 @@
-# Glitech Dexterous Hand Assets
+# GHand Assets
 
-This repository contains public description assets for Glitech dexterous hands. The package supports simulation, visualization, algorithm verification and robotics development.
+This repository contains public description assets for GHand dexterous hands. The package supports simulation, visualization, algorithm verification and robotics development.
 The release provides URDF, MJCF and USD robot models, along with corresponding mesh geometric files.
 
 ## What Is Included
 
 | System           | Description                                                          | Formats         |
 |----|---|---|
-| `ghand5_system`   | Ghand 5 left and right dexterous hands                                 | URDF, MJCF, USD |
-| `ghand_lite1_system`   | Ghand Lite 1 left and right dexterous hands                                 | URDF, MJCF, USD |
+| `ghand5_system`   | GHand 5 left and right dexterous hands                                 | URDF, MJCF, USD |
+| `ghand_lite1_system`   | GHand Lite 1 left and right dexterous hands                                 | URDF, MJCF, USD |
 
 ## Visual Catalog
 
