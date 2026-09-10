@@ -99,8 +99,8 @@
     <limit
       lower="0"
       upper="1.5707963267949"
-      effort="0"
-      velocity="0" />
+      effort="0.42"
+      velocity="2.268928" />
   </joint>
   <link
     name="LF_PIP_link">
@@ -157,8 +157,8 @@
     <limit
       lower="0"
       upper="1.2915436464758"
-      effort="0"
-      velocity="0" />
+      effort="0.11"
+      velocity="2.513274" />
   </joint>
   <link
     name="LF_DIP_link">
@@ -215,8 +215,8 @@
     <limit
       lower="0"
       upper="1.5707963267949"
-      effort="0"
-      velocity="0" />
+      effort="0.02"
+      velocity="2.059489" />
     <mimic
       joint="LF_PIP"
       multiplier="0.841152165"
@@ -277,8 +277,8 @@
     <limit
       lower="0"
       upper="1.5707963267949"
-      effort="0"
-      velocity="0" />
+      effort="0.69"
+      velocity="2.234021" />
   </joint>
   <link
     name="RF_PIP_link">
@@ -335,8 +335,8 @@
     <limit
       lower="0"
       upper="1.5707963267949"
-      effort="0"
-      velocity="0" />
+      effort="0.18"
+      velocity="2.565634" />
   </joint>
   <link
     name="RF_DIP_link">
@@ -393,8 +393,8 @@
     <limit
       lower="0"
       upper="1.5707963267949"
-      effort="0"
-      velocity="0" />
+      effort="0.03"
+      velocity="2.181662" />
     <mimic
       joint="RF_PIP"
       multiplier="0.821680553"
@@ -455,8 +455,8 @@
     <limit
       lower="0"
       upper="1.5707963267949"
-      effort="0"
-      velocity="0" />
+      effort="0.69"
+      velocity="2.234021" />
   </joint>
   <link
     name="MF_PIP_link">
@@ -513,8 +513,8 @@
     <limit
       lower="0"
       upper="1.5707963267949"
-      effort="0"
-      velocity="0" />
+      effort="0.18"
+      velocity="2.565634" />
   </joint>
   <link
     name="MF_DIP_link">
@@ -571,8 +571,8 @@
     <limit
       lower="0"
       upper="1.5707963267949"
-      effort="0"
-      velocity="0" />
+      effort="0.03"
+      velocity="2.181662" />
     <mimic
       joint="MF_PIP"
       multiplier="0.821680553"
@@ -633,8 +633,8 @@
     <limit
       lower="-0.174532925199433"
       upper="0.174532925199433"
-      effort="0"
-      velocity="0" />
+      effort="0.6"
+      velocity="1.151917" />
   </joint>
   <link
     name="FF_MCP_link">
@@ -691,8 +691,8 @@
     <limit
       lower="0"
       upper="1.5707963267949"
-      effort="0"
-      velocity="0" />
+      effort="0.69"
+      velocity="2.234021" />
   </joint>
   <link
     name="FF_PIP_link">
@@ -749,8 +749,8 @@
     <limit
       lower="0"
       upper="1.39626340159546"
-      effort="0"
-      velocity="0" />
+      effort="0.18"
+      velocity="2.565634" />
   </joint>
   <link
     name="FF_DIP_link">
@@ -807,8 +807,8 @@
     <limit
       lower="0"
       upper="1.5707963267949"
-      effort="0"
-      velocity="0" />
+      effort="0.03"
+      velocity="2.181662" />
     <mimic
       joint="FF_PIP"
       multiplier="0.820453298"
@@ -869,8 +869,8 @@
     <limit
       lower="-0.174532925199433"
       upper="1.0471975511966"
-      effort="0"
-      velocity="0" />
+      effort="0.15"
+      velocity="4.18879" />
   </joint>
   <link
     name="Thumb_TMC_AA_link">
@@ -927,8 +927,8 @@
     <limit
       lower="0.349065850398866"
       upper="1.5707963267949"
-      effort="0"
-      velocity="0" />
+      effort="0.12"
+      velocity="4.18879" />
   </joint>
   <link
     name="Thumb_TMC_FE_link">
@@ -985,8 +985,8 @@
     <limit
       lower="0"
       upper="0.872664625997165"
-      effort="0"
-      velocity="0" />
+      effort="0.09"
+      velocity="3.141593" />
   </joint>
   <link
     name="Thumb_MCP_link">
@@ -1043,8 +1043,8 @@
     <limit
       lower="0"
       upper="1.15191730631626"
-      effort="0"
-      velocity="0" />
+      effort="0.13"
+      velocity="3.525565" />
   </joint>
   <link
     name="Thumb_IP_link">
@@ -1101,8 +1101,8 @@
     <limit
       lower="0"
       upper="1.5707963267949"
-      effort="0"
-      velocity="0" />
+      effort="0.03"
+      velocity="4.24115" />
     <mimic
       joint="Thumb_MCP"
       multiplier="1.107174665"
