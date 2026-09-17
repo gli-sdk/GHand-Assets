@@ -216,7 +216,7 @@
       velocity="2.4" />
     <mimic
       joint="THUMB_TMC_FE"
-      multiplier="1.1"
+      multiplier="1.13"
       offset="0" />
   </joint>
   <link
@@ -336,7 +336,7 @@
       velocity="2.4" />
     <mimic
       joint="FF_MCP"
-      multiplier="0.7721"
+      multiplier="0.7149"
       offset="0" />
   </joint>
   <link
@@ -456,7 +456,7 @@
       velocity="2.4" />
     <mimic
       joint="MF_MCP"
-      multiplier="0.7721"
+      multiplier="0.7319"
       offset="0" />
   </joint>
   <link
@@ -576,7 +576,7 @@
       velocity="2.4" />
     <mimic
       joint="RF_MCP"
-      multiplier="0.7721"
+      multiplier="0.7149"
       offset="0" />
   </joint>
   <link
@@ -696,7 +696,7 @@
       velocity="2.4" />
     <mimic
       joint="LF_MCP"
-      multiplier="0.772"
+      multiplier="0.6939"
       offset="0" />
   </joint>
 </robot>
