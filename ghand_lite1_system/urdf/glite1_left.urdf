@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot
+  name="glite1-left">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0059581 -0.0022465 0.038099"
+        rpy="0 0 0" />
+      <mass
+        value="0.10333" />
+      <inertia
+        ixx="0.00010757"
+        ixy="-4.7127E-07"
+        ixz="6.3445E-06"
+        iyy="7.8149E-05"
+        iyz="3.1726E-07"
+        izz="3.6434E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand_lite1_system/meshes/hands/visual/left/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0.4 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand_lite1_system/meshes/hands/visual/left/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="THUMB_TMC_AA_link">
+    <inertial>
+      <origin
+        xyz="0.0035105 -0.010768 -0.014524"
+        rpy="0 0 0" />
+      <mass
+        value="0.0012466" />
+      <inertia
+        ixx="2.4845E-08"
+        ixy="-8.7028E-09"
+        ixz="4.7186E-09"
+        iyy="4.8434E-08"
+        iyz="1.9854E-10"
+        izz="4.2146E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand_lite1_system/meshes/hands/visual/left/THUMB_TMC_AA_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand_lite1_system/meshes/hands/visual/left/THUMB_TMC_AA_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="THUMB_TMC_AA"
+    type="revolute">
+    <origin
+      xyz="0.0027419 -0.015355 0.0407"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="THUMB_TMC_AA_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.5708"
+      effort="0.2"
+      velocity="2.4" />
+  </joint>
+  <link
+    name="THUMB_TMC_FE_Link">
+    <inertial>
+      <origin
+        xyz="0.0096916 -0.00049003 -3.0865E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.021953" />
+      <inertia
+        ixx="2.0396E-06"
+        ixy="1.5788E-07"
+        ixz="1.5729E-10"
+        iyy="6.919E-06"
+        iyz="-2.1242E-09"
+        izz="6.7482E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand_lite1_system/meshes/hands/visual/left/THUMB_TMC_FE_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand_lite1_system/meshes/hands/visual/left/THUMB_TMC_FE_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="THUMB_TMC_FE"
+    type="revolute">
+    <origin
+      xyz="0.0051244 -0.016734 -0.017602"
+      rpy="1.348 -0.34487 -1.1889" />
+    <parent
+      link="THUMB_TMC_AA_link" />
+    <child
+      link="THUMB_TMC_FE_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.8727"
+      effort="0.2"
+      velocity="2.4" />
+  </joint>
+  <link
+    name="THUMB_MCP_Link">
+    <inertial>
+      <origin
+        xyz="0.012263 0.0025949 -2.0051E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.0052707" />
+      <inertia
+        ixx="2.2466E-07"
+        ixy="-1.8504E-08"
+        ixz="-2.05E-11"
+        iyy="3.7914E-07"
+        iyz="-1.7826E-11"
+        izz="3.1935E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand_lite1_system/meshes/hands/visual/left/THUMB_MCP_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand_lite1_system/meshes/hands/visual/left/THUMB_MCP_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="THUMB_MCP"
+    type="revolute">
+    <origin
+      xyz="0.0555 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="THUMB_TMC_FE_Link" />
+    <child
+      link="THUMB_MCP_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.8727"
+      effort="0.16"
+      velocity="2.4" />
+    <mimic
+      joint="THUMB_TMC_FE"
+      multiplier="1.1"
+      offset="0" />
+  </joint>
+  <link
+    name="FF_MCP_Link">
+    <inertial>
+      <origin
+        xyz="0.016994 -0.0020693 3.0166E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.0048788" />
+      <inertia
+        ixx="2.3552E-07"
+        ixy="-1.2544E-08"
+        ixz="-2.4277E-10"
+        iyy="6.8665E-07"
+        iyz="-3.107E-11"
+        izz="6.4138E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand_lite1_system/meshes/hands/visual/left/FF_MCP_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand_lite1_system/meshes/hands/visual/left/FF_MCP_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FF_MCP"
+    type="revolute">
+    <origin
+      xyz="-0.0061775 -0.027065 0.08605"
+      rpy="0.6048 -1.5006 -2.0893" />
+    <parent
+      link="base_link" />
+    <child
+      link="FF_MCP_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.57"
+      effort="0.2"
+      velocity="2.4" />
+  </joint>
+  <link
+    name="FF_IP_Link">
+    <inertial>
+      <origin
+        xyz="0.014502 0.0028707 5.7694E-09"
+        rpy="0 0 0" />
+      <mass
+        value="0.0042877" />
+      <inertia
+        ixx="1.3646E-07"
+        ixy="-1.2634E-07"
+        ixz="3.4644E-11"
+        iyy="3.5763E-07"
+        iyz="1.1288E-11"
+        izz="4.0687E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand_lite1_system/meshes/hands/visual/left/FF_IP_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand_lite1_system/meshes/hands/visual/left/FF_IP_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FF_IP"
+    type="revolute">
+    <origin
+      xyz="0.0338 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="FF_MCP_Link" />
+    <child
+      link="FF_IP_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.3962"
+      effort="0.16"
+      velocity="2.4" />
+    <mimic
+      joint="FF_MCP"
+      multiplier="0.7721"
+      offset="0" />
+  </joint>
+  <link
+    name="MF_MCP_Link">
+    <inertial>
+      <origin
+        xyz="0.016995 -0.0020692 2.8772E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.0048788" />
+      <inertia
+        ixx="2.3552E-07"
+        ixy="-1.2543E-08"
+        ixz="-2.4279E-10"
+        iyy="6.8668E-07"
+        iyz="-3.3988E-11"
+        izz="6.414E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand_lite1_system/meshes/hands/visual/left/MF_MCP_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand_lite1_system/meshes/hands/visual/left/MF_MCP_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="MF_MCP"
+    type="revolute">
+    <origin
+      xyz="-0.0069842 -0.0083554 0.090606"
+      rpy="-1.5704 -1.5533 -0.00055" />
+    <parent
+      link="base_link" />
+    <child
+      link="MF_MCP_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.57"
+      effort="0.2"
+      velocity="2.4" />
+  </joint>
+  <link
+    name="MF_IP_Link">
+    <inertial>
+      <origin
+        xyz="0.016937 0.0024934 3.8363E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.0048125" />
+      <inertia
+        ixx="1.5428E-07"
+        ixy="-1.5822E-07"
+        ixz="6.4511E-11"
+        iyy="5.2033E-07"
+        iyz="3.3226E-11"
+        izz="5.7391E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand_lite1_system/meshes/hands/visual/left/MF_IP_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand_lite1_system/meshes/hands/visual/left/MF_IP_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="MF_IP"
+    type="revolute">
+    <origin
+      xyz="0.0338 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="MF_MCP_Link" />
+    <child
+      link="MF_IP_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.3962"
+      effort="0.16"
+      velocity="2.4" />
+    <mimic
+      joint="MF_MCP"
+      multiplier="0.7721"
+      offset="0" />
+  </joint>
+  <link
+    name="RF_MCP_Link">
+    <inertial>
+      <origin
+        xyz="0.016995 -0.0020692 2.7501E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.0048788" />
+      <inertia
+        ixx="2.3552E-07"
+        ixy="-1.2542E-08"
+        ixz="-2.4218E-10"
+        iyy="6.8667E-07"
+        iyz="-3.7693E-11"
+        izz="6.4139E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand_lite1_system/meshes/hands/visual/left/RF_MCP_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand_lite1_system/meshes/hands/visual/left/RF_MCP_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RF_MCP"
+    type="revolute">
+    <origin
+      xyz="-0.0058769 0.010661 0.088033"
+      rpy="-2.9459 -1.4997 1.322" />
+    <parent
+      link="base_link" />
+    <child
+      link="RF_MCP_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.57"
+      effort="0.2"
+      velocity="2.4" />
+  </joint>
+  <link
+    name="RF_IP_Link">
+    <inertial>
+      <origin
+        xyz="0.014502 0.0028707 -1.1284E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.0042877" />
+      <inertia
+        ixx="1.3646E-07"
+        ixy="-1.2634E-07"
+        ixz="3.468E-11"
+        iyy="3.5763E-07"
+        iyz="1.0926E-11"
+        izz="4.0687E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand_lite1_system/meshes/hands/visual/left/RF_IP_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand_lite1_system/meshes/hands/visual/left/RF_IP_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RF_IP"
+    type="revolute">
+    <origin
+      xyz="0.0338 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="RF_MCP_Link" />
+    <child
+      link="RF_IP_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.3962"
+      effort="0.16"
+      velocity="2.4" />
+    <mimic
+      joint="RF_MCP"
+      multiplier="0.7721"
+      offset="0" />
+  </joint>
+  <link
+    name="LF_MCP_Link">
+    <inertial>
+      <origin
+        xyz="0.014735 -0.0022226 -1.307E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0045558" />
+      <inertia
+        ixx="2.1792E-07"
+        ixy="-7.2916E-09"
+        ixz="8.1346E-10"
+        iyy="4.9298E-07"
+        iyz="1.2119E-10"
+        izz="4.4423E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand_lite1_system/meshes/hands/visual/left/LF_MCP_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand_lite1_system/meshes/hands/visual/left/LF_MCP_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LF_MCP"
+    type="revolute">
+    <origin
+      xyz="-0.0038799 0.029218 0.08175"
+      rpy="2.8908 -1.4151 1.7367" />
+    <parent
+      link="base_link" />
+    <child
+      link="LF_MCP_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.57"
+      effort="0.2"
+      velocity="2.4" />
+  </joint>
+  <link
+    name="LF_IP_Link">
+    <inertial>
+      <origin
+        xyz="0.014357 0.0012266 -5.8784E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.0041612" />
+      <inertia
+        ixx="1.24E-07"
+        ixy="-1.1505E-07"
+        ixz="3.6219E-11"
+        iyy="3.8754E-07"
+        iyz="6.991E-12"
+        izz="4.2284E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand_lite1_system/meshes/hands/visual/left/LF_IP_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ghand_lite1_system/meshes/hands/visual/left/LF_IP_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LF_IP"
+    type="revolute">
+    <origin
+      xyz="0.0285 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="LF_MCP_Link" />
+    <child
+      link="LF_IP_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.3962"
+      effort="0.16"
+      velocity="2.4" />
+    <mimic
+      joint="LF_MCP"
+      multiplier="0.772"
+      offset="0" />
+  </joint>
+</robot>
