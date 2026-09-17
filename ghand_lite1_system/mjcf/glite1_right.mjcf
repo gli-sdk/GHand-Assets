@@ -1,0 +1,149 @@
+<mujoco model="glite1-right">
+  <default>
+    <default class="robot">
+      <default class="motor">
+        <joint />
+        <motor />
+      </default>
+      <default class="visual">
+        <geom material="visualgeom" contype="0" conaffinity="0" group="2" />
+      </default>
+      <default class="collision">
+        <geom material="collision_material" condim="3" contype="0" conaffinity="1" priority="1" group="1" solref="0.005 1" solimp="0.99 0.999 1e-05" friction="1 0.01 0.01" />
+      </default>
+    </default>
+  </default>
+
+  <compiler angle="radian" />
+
+  <asset>
+    <material name="" rgba="0 0 0 1" />
+    <material name="default_material" rgba="0.7 0.7 0.7 1" />
+    <material name="collision_material" rgba="1.0 0.28 0.1 0.9" />
+    <mesh name="base_link.STL" file="ghand_lite1_system/meshes/hands/visual/right/base_link.STL" />
+    <mesh name="THUMB_TMC_AA_link.STL" file="ghand_lite1_system/meshes/hands/visual/right/THUMB_TMC_AA_link.STL" />
+    <mesh name="THUMB_TMC_FE_Link.STL" file="ghand_lite1_system/meshes/hands/visual/right/THUMB_TMC_FE_Link.STL" />
+    <mesh name="THUMB_MCP_Link.STL" file="ghand_lite1_system/meshes/hands/visual/right/THUMB_MCP_Link.STL" />
+    <mesh name="FF_MCP_Link.STL" file="ghand_lite1_system/meshes/hands/visual/right/FF_MCP_Link.STL" />
+    <mesh name="FF_IP_Link.STL" file="ghand_lite1_system/meshes/hands/visual/right/FF_IP_Link.STL" />
+    <mesh name="MF_MCP_Link.STL" file="ghand_lite1_system/meshes/hands/visual/right/MF_MCP_Link.STL" />
+    <mesh name="MF_IP_Link.STL" file="ghand_lite1_system/meshes/hands/visual/right/MF_IP_Link.STL" />
+    <mesh name="RF_MCP_Link.STL" file="ghand_lite1_system/meshes/hands/visual/right/RF_MCP_Link.STL" />
+    <mesh name="RF_IP_Link.STL" file="ghand_lite1_system/meshes/hands/visual/right/RF_IP_Link.STL" />
+    <mesh name="LF_MCP_Link.STL" file="ghand_lite1_system/meshes/hands/visual/right/LF_MCP_Link.STL" />
+    <mesh name="LF_IP_Link.STL" file="ghand_lite1_system/meshes/hands/visual/right/LF_IP_Link.STL" />
+  </asset>
+
+  <worldbody>
+    <body name="base_link" pos="0.00000000 0.00000000 0.00000000" quat="1 0 0 0" childclass="robot">
+      <freejoint name="floating_base" />
+      <geom name="base_link_collision" pos="0 0 0" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="base_link.STL" class="collision" />
+      <geom name="base_link_visual" pos="0 0 0" quat="1.0 0.0 0.0 0.0" material="" type="mesh" mesh="base_link.STL" class="visual" />
+      <body name="THUMB_TMC_AA_link" pos="0.0027419 0.015355 0.0407" quat="-2.962197022002295e-06 0.8064338741344774 0.5913242821286517 -2.1720553708623664e-06">
+        <joint name="THUMB_TMC_AA" type="hinge" ref="0.0" class="motor" range="0 1.57" axis="0 0 1" />
+        <inertial pos="0.011325 0.00010996 0.014524" quat="1.0 0.0 0.0 0.0" mass="0.0012466" diaginertia="5.1293e-08 2.1987e-08 4.2146e-08" />
+        <geom name="THUMB_TMC_AA_link_collision" pos="0 0 0" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="THUMB_TMC_AA_link.STL" class="collision" />
+        <geom name="THUMB_TMC_AA_link_visual" pos="0 0 0" quat="1.0 0.0 0.0 0.0" material="" type="mesh" mesh="THUMB_TMC_AA_link.STL" class="visual" />
+        <body name="THUMB_TMC_FE_Link" pos="0.0175 -0.00014467 0.017602" quat="0.7650908979023362 -0.6195336101905101 0.11047315638170072 0.1364173944567722">
+          <joint name="THUMB_TMC_FE" type="hinge" ref="0.0" class="motor" range="0 0.8727" axis="0 0 1" />
+          <inertial pos="0.0096915 -0.00049003 -3.0884E-05" quat="1.0 0.0 0.0 0.0" mass="0.021953" diaginertia="2.0396e-06 6.919e-06 6.7482e-06" />
+          <geom name="THUMB_TMC_FE_Link_collision" pos="0 0 0" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="THUMB_TMC_FE_Link.STL" class="collision" />
+          <geom name="THUMB_TMC_FE_Link_visual" pos="0 0 0" quat="1.0 0.0 0.0 0.0" material="" type="mesh" mesh="THUMB_TMC_FE_Link.STL" class="visual" />
+          <body name="THUMB_MCP_Link" pos="0.0555 0 0" quat="1.0 0.0 0.0 0.0">
+            <joint name="THUMB_MCP" type="hinge" ref="0.0" class="motor" range="0 0.8727" axis="0 0 1" />
+            <inertial pos="0.012263 0.002595 -3.2073E-07" quat="1.0 0.0 0.0 0.0" mass="0.0052709" diaginertia="2.2468e-07 3.7918e-07 3.1936e-07" />
+            <geom name="THUMB_MCP_Link_collision" pos="0 0 0" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="THUMB_MCP_Link.STL" class="collision" />
+            <geom name="THUMB_MCP_Link_visual" pos="0 0 0" quat="1.0 0.0 0.0 0.0" material="" type="mesh" mesh="THUMB_MCP_Link.STL" class="visual" />
+          </body>
+        </body>
+      </body>
+      <body name="FF_MCP_Link" pos="-0.0061775 0.027065 0.08605" quat="-0.4534802669343721 0.5262850411223415 0.5018693069563611 0.515273618310823">
+        <joint name="FF_MCP" type="hinge" ref="0.0" class="motor" range="0 1.57" axis="0 0 1" />
+        <inertial pos="0.016994 -0.0020693 2.7252E-06" quat="1.0 0.0 0.0 0.0" mass="0.0048788" diaginertia="2.3552e-07 6.8665e-07 6.4138e-07" />
+        <geom name="FF_MCP_Link_collision" pos="0 0 0" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="FF_MCP_Link.STL" class="collision" />
+        <geom name="FF_MCP_Link_visual" pos="0 0 0" quat="1.0 0.0 0.0 0.0" material="" type="mesh" mesh="FF_MCP_Link.STL" class="visual" />
+        <body name="FF_IP_Link" pos="0.0338 0 0" quat="1.0 0.0 0.0 0.0">
+          <joint name="FF_IP" type="hinge" ref="0.0" class="motor" range="0 1.3962" axis="0 0 1" />
+          <inertial pos="0.014502 0.0028707 -1.591E-08" quat="1.0 0.0 0.0 0.0" mass="0.0042877" diaginertia="1.3646e-07 3.5763e-07 4.0687e-07" />
+          <geom name="FF_IP_Link_collision" pos="0 0 0" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="FF_IP_Link.STL" class="collision" />
+          <geom name="FF_IP_Link_visual" pos="0 0 0" quat="1.0 0.0 0.0 0.0" material="" type="mesh" mesh="FF_IP_Link.STL" class="visual" />
+        </body>
+      </body>
+      <body name="MF_MCP_Link" pos="-0.0069842 0.0083554 0.090606" quat="0.5043893862064559 -0.5043203969998138 -0.4956455067776179 -0.49556817478867954">
+        <joint name="MF_MCP" type="hinge" ref="0.0" class="motor" range="0 1.57" axis="0 0 1" />
+        <inertial pos="0.016995 -0.0020692 2.8771E-06" quat="1.0 0.0 0.0 0.0" mass="0.0048788" diaginertia="2.3552e-07 6.8668e-07 6.414e-07" />
+        <geom name="MF_MCP_Link_collision" pos="0 0 0" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="MF_MCP_Link.STL" class="collision" />
+        <geom name="MF_MCP_Link_visual" pos="0 0 0" quat="1.0 0.0 0.0 0.0" material="" type="mesh" mesh="MF_MCP_Link.STL" class="visual" />
+        <body name="MF_IP_Link" pos="0.0338 0 0" quat="1.0 0.0 0.0 0.0">
+          <joint name="MF_IP" type="hinge" ref="0.0" class="motor" range="0 1.3962" axis="0 0 1" />
+          <inertial pos="0.016937 0.0024934 3.8363E-06" quat="1.0 0.0 0.0 0.0" mass="0.0048125" diaginertia="1.5428e-07 5.2033e-07 5.7391e-07" />
+          <geom name="MF_IP_Link_collision" pos="0 0 0" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="MF_IP_Link.STL" class="collision" />
+          <geom name="MF_IP_Link_visual" pos="0 0 0" quat="1.0 0.0 0.0 0.0" material="" type="mesh" mesh="MF_IP_Link.STL" class="visual" />
+        </body>
+      </body>
+      <body name="RF_MCP_Link" pos="-0.0058769 -0.010661 0.088033" quat="0.5340247950815503 -0.4728249546414298 -0.49152441336224795 -0.4996577144159146">
+        <joint name="RF_MCP" type="hinge" ref="0.0" class="motor" range="0 1.57" axis="0 0 1" />
+        <inertial pos="0.016995 -0.0020692 3.0024E-06" quat="1.0 0.0 0.0 0.0" mass="0.0048788" diaginertia="2.3552e-07 6.8667e-07 6.414e-07" />
+        <geom name="RF_MCP_Link_collision" pos="0 0 0" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="RF_MCP_Link.STL" class="collision" />
+        <geom name="RF_MCP_Link_visual" pos="0 0 0" quat="1.0 0.0 0.0 0.0" material="" type="mesh" mesh="RF_MCP_Link.STL" class="visual" />
+        <body name="RF_IP_Link" pos="0.0338 0 0" quat="1.0 0.0 0.0 0.0">
+          <joint name="RF_IP" type="hinge" ref="0.0" class="motor" range="0 1.3962" axis="0 0 1" />
+          <inertial pos="0.014502 0.0028707 6.4726E-09" quat="1.0 0.0 0.0 0.0" mass="0.0042877" diaginertia="1.3646e-07 3.5763e-07 4.0687e-07" />
+          <geom name="RF_IP_Link_collision" pos="0 0 0" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="RF_IP_Link.STL" class="collision" />
+          <geom name="RF_IP_Link_visual" pos="0 0 0" quat="1.0 0.0 0.0 0.0" material="" type="mesh" mesh="RF_IP_Link.STL" class="visual" />
+        </body>
+      </body>
+      <body name="LF_MCP_Link" pos="-0.0038799 -0.029218 0.08175" quat="0.5491950044762153 -0.43079066248024067 -0.48919473052197066 -0.5229653600457123">
+        <joint name="LF_MCP" type="hinge" ref="0.0" class="motor" range="0 1.57" axis="0 0 1" />
+        <inertial pos="0.014735 -0.0022226 -1.2998E-05" quat="1.0 0.0 0.0 0.0" mass="0.0045558" diaginertia="2.1792e-07 4.9298e-07 4.4423e-07" />
+        <geom name="LF_MCP_Link_collision" pos="0 0 0" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="LF_MCP_Link.STL" class="collision" />
+        <geom name="LF_MCP_Link_visual" pos="0 0 0" quat="1.0 0.0 0.0 0.0" material="" type="mesh" mesh="LF_MCP_Link.STL" class="visual" />
+        <body name="LF_IP_Link" pos="0.0285 0 0" quat="1.0 0.0 0.0 0.0">
+          <joint name="LF_IP" type="hinge" ref="0.0" class="motor" range="0 1.3962" axis="0 0 1" />
+          <inertial pos="0.014286 0.0018816 -2.4038E-08" quat="1.0 0.0 0.0 0.0" mass="0.0041612" diaginertia="1.3506e-07 3.7648e-07 4.2284e-07" />
+          <geom name="LF_IP_Link_collision" pos="0 0 0" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="LF_IP_Link.STL" class="collision" />
+          <geom name="LF_IP_Link_visual" pos="0 0 0" quat="1.0 0.0 0.0 0.0" material="" type="mesh" mesh="LF_IP_Link.STL" class="visual" />
+        </body>
+      </body>
+      <site name="base_link_site" pos="0 0 0" quat="1 0 0 0" />
+      <camera name="front_camera" mode="track" fovy="90.0" quat="4.329637285359678e-17 4.329637285359677e-17 0.7071067811865475 0.7071067811865476" pos="0.0 2.0 0.5" />
+      <camera name="side_camera" mode="track" fovy="90.0" quat="-0.5 -0.4999999999999999 0.5 0.5000000000000001" pos="-2.0 0.0 0.5" />
+    </body>
+  </worldbody>
+
+  <actuator>
+    <motor name="THUMB_TMC_AA_ctrl" joint="THUMB_TMC_AA" class="motor" />
+    <motor name="THUMB_TMC_FE_ctrl" joint="THUMB_TMC_FE" class="motor" />
+    <motor name="THUMB_MCP_ctrl" joint="THUMB_MCP" class="motor" />
+    <motor name="FF_MCP_ctrl" joint="FF_MCP" class="motor" />
+    <motor name="FF_IP_ctrl" joint="FF_IP" class="motor" />
+    <motor name="MF_MCP_ctrl" joint="MF_MCP" class="motor" />
+    <motor name="MF_IP_ctrl" joint="MF_IP" class="motor" />
+    <motor name="RF_MCP_ctrl" joint="RF_MCP" class="motor" />
+    <motor name="RF_IP_ctrl" joint="RF_IP" class="motor" />
+    <motor name="LF_MCP_ctrl" joint="LF_MCP" class="motor" />
+    <motor name="LF_IP_ctrl" joint="LF_IP" class="motor" />
+  </actuator>
+
+  <contact>
+    <exclude body1="base_link" body2="THUMB_TMC_AA_link" />
+    <exclude body1="THUMB_TMC_AA_link" body2="THUMB_TMC_FE_Link" />
+    <exclude body1="THUMB_TMC_FE_Link" body2="THUMB_MCP_Link" />
+    <exclude body1="base_link" body2="FF_MCP_Link" />
+    <exclude body1="FF_MCP_Link" body2="FF_IP_Link" />
+    <exclude body1="base_link" body2="MF_MCP_Link" />
+    <exclude body1="MF_MCP_Link" body2="MF_IP_Link" />
+    <exclude body1="base_link" body2="RF_MCP_Link" />
+    <exclude body1="RF_MCP_Link" body2="RF_IP_Link" />
+    <exclude body1="base_link" body2="LF_MCP_Link" />
+    <exclude body1="LF_MCP_Link" body2="LF_IP_Link" />
+  </contact>
+
+  <sensor>
+    <framepos name="base_link_site_pos" objtype="site" objname="base_link_site" />
+    <framequat name="base_link_site_quat" objtype="site" objname="base_link_site" />
+    <framelinvel name="base_link_site_linvel" objtype="site" objname="base_link_site" />
+    <frameangvel name="base_link_site_angvel" objtype="site" objname="base_link_site" />
+    <velocimeter name="base_link_site_vel" site="base_link_site" />
+  </sensor>
+</mujoco>
