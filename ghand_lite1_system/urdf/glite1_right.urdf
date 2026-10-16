@@ -95,7 +95,7 @@
       xyz="0 0 1" />
     <limit
       lower="0"
-      upper="1.57"
+      upper="1.5708"
       effort="0.2"
       velocity="2.4" />
   </joint>
@@ -211,12 +211,12 @@
       xyz="0 0 1" />
     <limit
       lower="0"
-      upper="0.8727"
+      upper="0.9563"
       effort="0.16"
       velocity="2.4" />
     <mimic
       joint="THUMB_TMC_FE"
-      multiplier="1.13"
+      multiplier="1.1"
       offset="0" />
   </joint>
   <link
@@ -273,7 +273,7 @@
       xyz="0 0 1" />
     <limit
       lower="0"
-      upper="1.57"
+      upper="1.789"
       effort="0.2"
       velocity="2.4" />
   </joint>
@@ -331,12 +331,12 @@
       xyz="0 0 1" />
     <limit
       lower="0"
-      upper="1.3962"
+      upper="1.3794"
       effort="0.16"
       velocity="2.4" />
     <mimic
       joint="FF_MCP"
-      multiplier="0.7149"
+      multiplier="0.7721"
       offset="0" />
   </joint>
   <link
@@ -393,7 +393,7 @@
       xyz="0 0 1" />
     <limit
       lower="0"
-      upper="1.57"
+      upper="1.789"
       effort="0.2"
       velocity="2.4" />
   </joint>
@@ -451,12 +451,12 @@
       xyz="0 0 1" />
     <limit
       lower="0"
-      upper="1.3962"
+      upper="1.3794"
       effort="0.16"
       velocity="2.4" />
     <mimic
       joint="MF_MCP"
-      multiplier="0.7319"
+      multiplier="0.7721"
       offset="0" />
   </joint>
   <link
@@ -513,7 +513,7 @@
       xyz="0 0 1" />
     <limit
       lower="0"
-      upper="1.57"
+      upper="1.789"
       effort="0.2"
       velocity="2.4" />
   </joint>
@@ -571,12 +571,12 @@
       xyz="0 0 1" />
     <limit
       lower="0"
-      upper="1.3962"
+      upper="1.3794"
       effort="0.16"
       velocity="2.4" />
     <mimic
       joint="RF_MCP"
-      multiplier="0.7149"
+      multiplier="0.7721"
       offset="0" />
   </joint>
   <link
@@ -633,7 +633,7 @@
       xyz="0 0 1" />
     <limit
       lower="0"
-      upper="1.57"
+      upper="1.8151"
       effort="0.2"
       velocity="2.4" />
   </joint>
@@ -691,12 +691,12 @@
       xyz="0 0 1" />
     <limit
       lower="0"
-      upper="1.3962"
+      upper="1.4014"
       effort="0.16"
       velocity="2.4" />
     <mimic
       joint="LF_MCP"
-      multiplier="0.6939"
+      multiplier="0.772"
       offset="0" />
   </joint>
 </robot>
