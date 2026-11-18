@@ -14,7 +14,7 @@
     </default>
   </default>
 
-  <compiler angle="radian" />
+  <compiler angle="radian" meshdir="../.." />
 
   <asset>
     <material name="urdf_material" rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
@@ -160,25 +160,28 @@
     </body>
   </worldbody>
 
+  <equality>
+    <joint joint1="LF_DIP" joint2="LF_PIP" polycoef="0 0.657759641738 0.0970360891598 0.13178482715 -0.081141651254" />
+    <joint joint1="RF_DIP" joint2="RF_PIP" polycoef="0 0.674285131665 0.057118800564 0.133031319042 -0.0767066618593" />
+    <joint joint1="MF_DIP" joint2="MF_PIP" polycoef="0 0.674285131665 0.057118800564 0.133031319042 -0.0767066618593" />
+    <joint joint1="FF_DIP" joint2="FF_PIP" polycoef="0 0.669239486219 0.0816323656696 0.0999189096934 -0.063436130925" />
+    <joint joint1="Thumb_IP" joint2="Thumb_MCP" polycoef="0 1.20210774174 -0.170198275022 0.277768864572 -0.188585562841" />
+  </equality>
+
   <actuator>
     <motor name="LF_MCP_ctrl" joint="LF_MCP" class="motor" />
     <motor name="LF_PIP_ctrl" joint="LF_PIP" class="motor" />
-    <motor name="LF_DIP_ctrl" joint="LF_DIP" class="motor" />
     <motor name="RF_MCP_ctrl" joint="RF_MCP" class="motor" />
     <motor name="RF_PIP_ctrl" joint="RF_PIP" class="motor" />
-    <motor name="RF_DIP_ctrl" joint="RF_DIP" class="motor" />
     <motor name="MF_MCP_ctrl" joint="MF_MCP" class="motor" />
     <motor name="MF_PIP_ctrl" joint="MF_PIP" class="motor" />
-    <motor name="MF_DIP_ctrl" joint="MF_DIP" class="motor" />
     <motor name="FF_MCP_AA_ctrl" joint="FF_MCP_AA" class="motor" />
     <motor name="FF_MCP_ctrl" joint="FF_MCP" class="motor" />
     <motor name="FF_PIP_ctrl" joint="FF_PIP" class="motor" />
-    <motor name="FF_DIP_ctrl" joint="FF_DIP" class="motor" />
     <motor name="Thumb_TMC_PS_ctrl" joint="Thumb_TMC_PS" class="motor" />
     <motor name="Thumb_TMC_AA_ctrl" joint="Thumb_TMC_AA" class="motor" />
     <motor name="Thumb_TMC_FE_ctrl" joint="Thumb_TMC_FE" class="motor" />
     <motor name="Thumb_MCP_ctrl" joint="Thumb_MCP" class="motor" />
-    <motor name="Thumb_IP_ctrl" joint="Thumb_IP" class="motor" />
   </actuator>
 
   <contact>
